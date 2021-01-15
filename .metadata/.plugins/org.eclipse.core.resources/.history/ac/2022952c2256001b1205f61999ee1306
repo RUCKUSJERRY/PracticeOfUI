@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	&lt;&nbsp;태그연습&nbsp;&gt;<br/>
+	
+	<!-- 
+		
+		&lt; <
+		&gt; >
+		&nbsp; white space
+		&quot; "
+		&amp; &
+	
+	 -->
+
+	<a href="html01-block-inline.html">01.블록요소, 인라인요소</a>
+
+</body>
+</html>

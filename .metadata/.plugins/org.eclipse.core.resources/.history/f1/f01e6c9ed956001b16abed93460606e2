@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="html08-form01-res.html" method="get">
+	 	<fieldset>
+	 		<legend>회원가입</legend>
+	 		
+	 		<p>아이디 : <input type="text" name="id" /></p>
+	 		<p>비밀번호 : <input type="password" name="pw" /></p>
+	 		<p>이메일수신여부
+	 			<input type="radio" name="radio" value="y" />Yes<br/>
+	 			<input type="radio" name="radio" value="n" />no	
+	 		</p>
+	 		
+	 		
+	 	</fieldset>
+	
+	
+	
+	</form>
+
+</body>
+</html>
