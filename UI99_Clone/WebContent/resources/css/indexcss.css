@@ -1,0 +1,47 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    width: 1315px;
+    height: 213px;
+}
+
+header #main {
+
+    position: relative;
+    width: 1315px;
+    height: 160px;
+    border-bottom: 1px solid #e4e8eb;
+
+}
+
+header #main .logo {
+
+    position: relative;
+    
+
+}
+
+header #main .sidearea {
+
+    position: absolute;
+    top: 12px;
+    right: 27px;
+    
+
+}
+
+section {
+
+}
+
+aside {
+
+}
+
+footer {
+
+}
