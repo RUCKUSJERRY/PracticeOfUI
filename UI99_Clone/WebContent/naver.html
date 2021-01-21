@@ -38,15 +38,14 @@
         .t_l_rightside {
             position: relative;
             top: 1px;
-            height:30px;
+            height: 30px;
             vertical-align: middle;
             text-align: right;
             border: 2px dotted green;
 
         }
 
-        #setstartimg {
-            }
+        #setstartimg {}
 
         #rs_setstart:link {
             text-decoration: none;
@@ -81,8 +80,6 @@
             border: 2px dotted green;
 
         }
-
-
     </style>
 
 </head>
@@ -135,19 +132,24 @@
                         </a>
                     </div>
                     <span class="t_l_leftside_searchbar">
-                        <input name="searchbar" type="text" size="100px;">
-                        <input name="confirm_search" type="button" value="검색">
+                        <form method="get" action="http://search.naver.com/search.naver">
+                            검색어
+                            <input name="query">
+                            <input type="submit" value="검색">
+                        </form>
+                        <!-- <input name="searchbar" type="text" size="100px;"> -->
+                        <!-- <input name="confirm_search" type="button" value="검색"> -->
                     </span>
-                        
-                 </div>
-                    로고영역
-                </div>
 
+                </div>
+                로고영역
             </div>
-            <div class="menu side"></div>
 
         </div>
+        <div class="menu side"></div>
 
-    </header>
+    </div>
+
+</header>
 </body>
 </html>
