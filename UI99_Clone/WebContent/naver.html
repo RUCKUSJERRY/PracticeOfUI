@@ -14,38 +14,31 @@
             font-size: 11px;
         }
 
-        header {
-            position: relative;
-            height: 300px;
-            /* background-color: aliceblue; */
-        }
-
         .top_container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            text-align: center;
-            transform: translate(-50%, -50%);
-            width: 1200px;
-            height: 300px;
-            /* background-color: rgb(40, 202, 40); */
+            position: relative;
+            border-bottom: 1px solid #e4e8eb;
         }
 
         .t_logoside {
             position: relative;
+            width: 1150px;
+            height: 160px;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            
         }
 
-        .t_l_rightside {
-            position: relative;
-            top: 1px;
-            height: 30px;
+        .t_logoside > .t_l_rightside {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            text-align: left;
+        }
+
+        #setstartimg{
             vertical-align: middle;
-            text-align: right;
-            border: 2px dotted green;
-
         }
-
-        #setstartimg {}
 
         #rs_setstart:link {
             text-decoration: none;
@@ -58,11 +51,8 @@
 
         .t_l_leftside {
             position: relative;
-            top: 30%;
-            left: 0;
-            vertical-align: middle;
-            text-align: left;
-            border: 2px dotted green;
+            height: 200px;
+            top: 50px;
 
         }
 
@@ -70,16 +60,41 @@
             position: relative;
             width: 300px;
             height: 200px;
-            background-color: ivory;
 
         }
 
         .t_l_leftside_searchbar {
+            top: -190px;
+            left: 240px;
+            height: 50px;
+            width: 630px;
             position: relative;
-            text-align: middle;
-            border: 2px dotted green;
+            border: 2px solid #30C800;
 
         }
+
+        #searchbar {
+            
+            width: 558px;
+            margin: 9px;
+            border: 0;
+            vertical-align: top;
+            font-weight: bold;
+            font-size: 18px;
+            outline: none;
+        }
+
+        #confirm_search {
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            border: 0;
+            cursor: pointer;
+           
+            
+
+        }
+
     </style>
 
 </head>
@@ -92,13 +107,22 @@
                         id="rs_setstart"
                         href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719">
                         네이버를 시작페이지로
-                        <img
+                        
+                    </a>
+                    <img
                             id="setstartimg"
                             src="resources/img/logo/set_start.png"
                             alt=""
-                            height="22px;"
-                            width="22px">
-                    </a>
+                            height="23px;"
+                            width="23px"
+                            style="cursor:hand;" onclick="self.location.href='https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719'"
+                            >
+                            <img
+                            id="sidebarstick"
+                            src="resources/img/logo/stick.png"
+                            alt=""
+                            height="10px;"
+                            >
 
                     <a id="rs_jrnaver" href="https://jr.naver.com/">
                         <img
@@ -127,28 +151,26 @@
                             <img
                                 src="resources/img/logo/main_logo.png"
                                 alt=""
-                                width="250px;"
-                                height="auto;">
+                                width="220px;"
+                                height="55px;">
                         </a>
                     </div>
-                    <span class="t_l_leftside_searchbar">
+                    <div class="t_l_leftside_searchbar">
                         <form method="get" action="http://search.naver.com/search.naver">
-                            검색어
-                            <input name="query">
-                            <input type="submit" value="검색">
+                            <input id="searchbar" name="query">
+                            <input id="confirm_search" name="search" type="image" src="resources/img/logo/search_back.png" alt="submit">
+
                         </form>
-                        <!-- <input name="searchbar" type="text" size="100px;"> -->
-                        <!-- <input name="confirm_search" type="button" value="검색"> -->
-                    </span>
-
+                        </form>
                 </div>
-                로고영역
-            </div>
 
+            </div>
         </div>
-        <div class="menu side"></div>
 
     </div>
+    <div class="menu side"></div>
+
+</div>
 
 </header>
 </body>
