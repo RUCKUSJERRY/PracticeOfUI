@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style type="text/css">
+
+       .box01{
+           display: inline-block;
+           width: 110px;
+           padding: 3px;
+       }
+
+       .box02{
+           float: left;
+           width: 80px;
+           
+               
+       }
+
+       .box02_text {
+           vertical-align: middle;
+       }
+
+       #special {
+           resize: none;
+       }
+
+    
+       input:checked {
+           width: 20px;
+           height: 20px;
+       }
+
+       input:focus {
+        background-color: orangered;
+       }
+
+       textarea {
+           background-color: black;
+           color: white;
+       }
+
+       #button:hover {
+            cursor: pointer;
+            background-color: yellowgreen;
+       }
+
+    </style>
+
+
+</head>
+<body>
+    <form action="server" method="post">
+    <h1>회원 가입</h1>
+
+    <fieldset>
+        <legend>필수 입력 정보</legend>
+        <span class="box01">아이디 : </span><span class="box01_text"><input type="id" name="id" maxlength="15" placeholder="아이디를 입력하세요." autofocus required></span><br>
+        <span class="box01">비밀번호 : </span><span class="box01_text"><input type="password" name="password" maxlength="15" placeholder="비밀번호를 입력하세요."></span><br>
+        <span class="box01">비밀번호확인 : </span><span class="box01_text"><input type="password" name="password_con" maxlength="15" placeholder="비밀번호를 다시 입력하세요."></span><br>
+        <span class="box01">이름 : </span><span class="box01_text"><input type="text" name="name" maxlength="5" placeholder="이름을 입력하세요."></span><br>
+        <span class="box01">이메일 : </span><span class="box01_text"><input type="email" name="email" placeholder="이메일을 입력하세요."></span><br>
+        <span class="box01">휴대전화번호 : </span><span class="box01_text"><input type="tel" name="tel"  placeholder="휴대폰 번호를 입력하세요."></span><br>
+        <span class="box01">홈페이지 : </span><span class="box01_text"><input type="url" name="url" value="https://"></span><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>추가 입력 정보</legend>
+        <span class="box02">국적 : </span><span class="box02_text">
+            <select class="box02_text" name="nation" id="nation" size="2">
+                <option>한국</option>
+                <option>중국</option>
+                <option>일본</option>
+                <option>기타</option>
+            </select>
+             </span><br>
+        <span class="box02">생년월일 : </span><span class="box02_text"><input type="date" name="date"></span><br>
+        <span class="box02">성별 : </span><span class="box02_text">
+            
+            <input class="radiocheck" id="genderm" type="radio" name="gender" value="M" checked> <label for="genderm">남자</label>
+            <input class="radiocheck" id="genderf" type="radio" name="gender" value="F" > <label for="genderf">여자</label></span><br>
+        <span class="box02">취미 : </span><span class="box02_text">
+            <input class="radiocheck" id="fishing" type="checkbox" name="hobby" value="낚시"> <label for="fishing">낚시</label>
+            <input class="radiocheck" id="game" type="checkbox" name="hobby" value="게임"> <label for="game">게임</label>
+            <input class="radiocheck" id="cooking" type="checkbox" name="hobby" value="요리"> <label for="cooking">요리</label></span><br>
+        <span class="box02">특이사항 : </span><span class="box02_text"><textarea id="special" name="con" cols="20" rows="5"></textarea></span><br>
+
+    </fieldset>
+    <br>
+    <input id="button" type="submit" value="가입하기" />
+    <input id="button" type="reset" value="취소하기" />
+</form>
+</body>
+</html>

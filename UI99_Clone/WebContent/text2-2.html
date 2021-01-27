@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    
+    table {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .bt {
+        background-color: green;
+        color: white;
+        border-color: white;
+    }
+
+    caption {
+        font-size: 23px;
+        font-weight: bold;
+        color: red;
+    }
+
+    thead {
+        background-color: red;
+        color: white;
+    }
+
+    tbody {
+        background-color: orange;
+    }
+
+    tfoot {
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <table border="1">
+        <caption>kh 리조트 대관 안내</caption>
+        <thead>
+            
+            <th>층</th>
+            <th>객실명</th>
+            <th>정원</th>
+            <th>가격</th>
+
+        </thead>
+        <tbody>
+
+
+            
+            <tr>
+            <td rowspan="6">2층</td>
+            <td rowspan="2">사랑방</td>
+            <td rowspan="2">4명</td>
+            <td>평일 : 300,000원 <button class="bt">예약하기</button></td>
+            
+            </tr>
+            <td>주말 : 500,000원 <button class="bt">예약하기</button></td>
+
+            <tr>   
+                <td rowspan="2">행복방</td>
+                <td rowspan="2">6명</td>
+                <td>평일 : 400,000원 <button class="bt">예약하기</button></td>
+            </tr>
+            <td>주말 : 600,000원 <button class="bt">예약하기</button></td>
+
+            <tr>
+                <td rowspan="2">코딩방</td>
+                <td rowspan="2">무제한</td>
+                <td>평일 : 800,000원 <button class="bt">예약하기</button></td>
+            </tr>
+            <td>주말 : 990,000원 <button class="bt">예약하기</button></td>
+
+        </tbody>
+        <tfoot>
+            <tr><td colspan="4">코딩방 예약시 커피 무제한 무료 증정!!!</td>
+                </tr>
+            
+        </tfoot>
+    </table>
+
+
+</body>
+</html>

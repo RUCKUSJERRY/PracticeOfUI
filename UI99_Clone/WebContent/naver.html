@@ -14,34 +14,52 @@
             font-size: 11px;
         }
 
+        .total_container {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        a {
+            text-decoration:none;
+        }
+
         .top_container {
             position: relative;
-            border-bottom: 1px solid #e4e8eb;
+            width: 60%;
+            margin: 0 auto;
+            
+
         }
 
         .t_logoside {
             position: relative;
-            width: 1150px;
+            width: 100%;
             height: 160px;
-            margin: 0 auto;
             padding-left: 15px;
             padding-right: 15px;
-            
+
+
+        }
+
+        .top_menuside {
+            width: 100%;
+            height: 52px;
+            border-top: 1px solid #e4e8eb;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
         }
 
         .t_logoside > .t_l_rightside {
+            width: 255px;
             position: absolute;
             top: 10px;
             right: 40px;
             text-align: left;
+            float: right;
         }
 
-        #setstartimg{
-            vertical-align: middle;
-        }
-
-        #rs_setstart:link {
-            text-decoration: none;
+        #setstartimg {
+            vertical-align: text-bottom;
         }
 
         #rs_setstart:hover {
@@ -50,7 +68,9 @@
         }
 
         .t_l_leftside {
+            display: block;
             position: relative;
+            width: 100%;
             height: 200px;
             top: 50px;
 
@@ -64,19 +84,20 @@
         }
 
         .t_l_leftside_searchbar {
-            top: -190px;
+            top: -195px;
             left: 240px;
-            height: 50px;
-            width: 630px;
+            height: 53px;
+            width: 612px;
             position: relative;
-            border: 2px solid #30C800;
+            border: 2px solid #19ce60;
+            
 
         }
 
         #searchbar {
             
-            width: 558px;
-            margin: 9px;
+            width: 525px;
+            margin: 15px;
             border: 0;
             vertical-align: top;
             font-weight: bold;
@@ -85,20 +106,873 @@
         }
 
         #confirm_search {
-            width: 50px;
-            height: 50px;
-            margin: 0;
-            border: 0;
+            
+            float: right;
+            width: 53px;
+            height: 53px;
             cursor: pointer;
-           
-
 
         }
+
+        .t_nav {
+            position: relative;
+            width: 1150px;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            vertical-align: middle;
+
+        }
+
+        .t_nav_menu {
+            position: relative;
+            width: 830px;
+            top: 10px;
+            height: 50px;
+        }
+
+        .t_nav_menu a {
+
+            font-size: 15px;
+            font-weight: bold;
+            padding-left: 13px;
+            text-decoration: none;
+        }
+
+        .t_nav_menu .nav_left {
+
+            color: #19ce60;
+
+        }
+
+        .t_nav_menu .nav_right {
+
+            color: inherit;
+        }
+
+        #mail_nav {
+            position: relative;
+            width: 22px;
+            height: 22px;
+            top: 3px;
+            padding-right: 8px;
+        }
+
+        #tv_nav {
+            position: relative;
+            width: 12px;
+            height: 15px;
+            top: 2px;
+            padding-right: 3px;
+
+        }
+
+        .t_nav_more {
+            position: absolute;
+            top: 0;
+            right: 30px;
+            width: 280px;
+            height: 50px;
+        }
+        .t_nav_more details,
+        details summary {
+            position: relative;
+            top: 8px;
+            font-size: 13px;
+            text-align: left;
+            text-decoration: none;
+            color: rgb(44, 43, 43);
+            padding-left: 0;           
+
+        }
+
+        details summary::-webkit-details-marker {
+                display: none;
+        }
+
+        .t_nav_more summary:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        #more_nav {
+            padding-left: 2px;
+        }
+
+        .t_nav_more_after {
+            position: absolute;
+            border: 1px solid red;
+            width: 1150px;
+            right: 100px;
+        }
+
+        .main {
+            position: relative;
+            width: 1150px;
+            margin: 0 auto; 
+            top: -20px;
+            
+        }
+
+        #main_ad_img {
+            width: 100%;
+            
+        }
+
+
+
+        .main_container {
+            position: relative;
+            width: 65%;
+            float: left;
+        }
+
+        .side_container {
+            position: relative;
+            float: right;
+            width: 32%;
+            
+        }
+
+        .login_area {
+            width: 85%;
+            height: 110px;
+            background-color: #f7f9fa;
+            border: 1px solid #dae1e6;
+            padding: 10px 15px 15px 15px;
+            
+            
+        }
+
+        .login_button {
+            position: relative;
+            display: block;
+            background-color: #19ce60;
+            height: 50px;
+            text-align: center;
+            
+            
+        }
+
+        #login_img {
+            position: relative;
+            display: inline-block;
+            right: 10px;
+            top: 18px;
+            width: 60px;
+            
+            
+        }
+
+        #button_text {
+            position: relative;
+            display: inline-block;
+            right: 5px;
+            top: 17px;
+            font-size: 13px;
+            font-weight: bold;
+            color: white;
+            
+           
+        }
+
+
+
+        #login_text {
+            color: gray;
+            padding: 5px 5px 10px;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        .login_other {
+            position: relative;
+            padding: 8px 8px 0px 8px;
+            
+        }
+
+        .login_find {
+            display: inline;
+            left: 5px;
+        }
+
+        .login_join {
+            display: inline;
+            float: right;
+
+        }
+
+        #l_other_img {
+            width: 10px;
+            vertical-align: middle;
+            
+        }
+
+        #login_other_link {
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        #login_other_link:hover {
+            text-decoration: underline;
+        }
+
+        #login_other_dot {
+            font-size: 10px;
+            font-weight: bold;
+            color: lightgray;
+        }
+
+        .newsarea {
+            position: relative;
+            width: 100%;
+            padding-top: 10px;
+        }
+
+        .news_summary {
+            
+            background-color: #f7f9fa;
+            width: 100%;
+            height: 45px;
+            
+            border: 1px solid #dae1e6;
+ 
+        }
+
+        .news_summary a{
+            display: inline-block;
+            font-size: 13px;
+            vertical-align: middle;   
+        }
+
+        .news_summary .summary01, .summary02, .summary04, .summary05, .summary06 {
+           
+            color: inherit;
+        }
+
+        .news_summary .summary01, .summary03, .summary04, .summary05, .summary06 {
+            font-weight: bold;
+            
+        }
+
+        .summary03 {
+            color: #3565c9;
+        }
+
+        .summary_left {
+            position: relative;
+            top: 13px;
+            left: 15px;
+            float: left;
+        }
+
+        .summary_right {
+            position: relative;
+            top: 13px;
+            right: 15px;
+            float: right;
+        }
+        
+        .summary_arrow {
+            position: relative;
+            width: 6px;
+            left: 5px;
+            padding-right: 5px;
+            
+        }
+
+        .summary02:hover {
+            text-decoration: underline;
+        }
+
+        .summary03, .summary_dot, .summary04, .summary05, .summary06 {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .summary_dot {
+            position: relative;
+            width: 4px;
+            vertical-align: middle;
+        }
+
+        .slide_summary {
+            position: relative;
+            width: 343px;
+            height: 45px;
+            border: 1px solid #dae1e6;
+            top: 11px;
+        }
+
+        .covid_issue {
+            position: relative;
+            float: left;
+            width: 33px;
+            height: 16px;
+            border: 1px solid;
+            border-radius: 9px;
+            text-align: center;
+            font-weight: bold;
+            top: 14px;
+            left: 14px;
+            font-size: 11PX;
+        }
+
+        .covid_text {
+            position: relative;
+            vertical-align: middle;
+            top: 14px;
+            left: 20px;
+            font-size: 13px;
+
+        }
+
+        .covid_text:hover {
+            text-decoration: underline;
+        }
+
+        .covid_button {
+            width: 48px;
+            height: 24px;
+            right: 10px;
+            bottom: 10px;
+            
+            background-color: white;  
+            position: absolute;
+        }
+
+        .covid_button button {
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            border: 1px solid #e4e8eb;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            cursor: pointer;
+            float: left;
+
+        }
+
+        .covid_button button img {
+            width: 5px;
+            height: 8px;
+        }
+
+        .covid_button button:hover {
+            background-color: #ebeff1;
+            
+        }
+
+        .covid_button button:focus {
+            outline: none;
+           
+        }
+
+        .news_table_head {
+            position: relative;
+           
+            margin-top: 13px;
+            height: 40px;   
+            
+        }
+
+        .table_head_left {
+            
+            cursor: pointer;
+        }
+
+
+
+        .table_head_left a {
+            padding: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            
+            
+        }
+
+        #newsleft_text {
+            font-size: 14px;
+        }
+
+        #newsleft_text:active {
+            font-weight: bold;
+        }
+
+
+        .table_head_right {
+            float: right;
+            cursor: pointer;
+            
+        }
+
+        .table_head_right img {
+            position: relative;
+            top: 5px;
+            padding: 7px;
+            height: 15px;
+            width: 15px;
+            
+        }
+        
+        .slide_ad {
+            margin-top: 23px;
+        }
+
+
+        #slide_ad_img {
+
+            width: 345px;
+            height: 200px;
+        }
+
+        .news_table_data {
+            height: 260px;
+        }
+
+        .news_table_data table {
+            padding-top: 15px;
+            width: 100%;
+            height: 260px;
+            border-collapse:collapse;
+            text-align: center;  
+        }
+
+        .news_table_data td {
+            border: 1px solid  #d5dadb;
+            
+        }
+
+        .news_table_data img {
+            width: 50px;
+            height: 25px;
+            
+        }
+
+        .news_table_data button {
+            border: 1px solid #edeef0;
+            background-color: #fff;
+            outline: none;
+        }
+
+        .table_button {     
+            position: absolute;
+            top: 220px;
+        }
+
+        .table_button img{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #f3f5f7;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        #table_button_left {
+            position: absolute;
+            left: -20px;  
+        }
+
+        #table_button_right {
+            position: absolute;
+            right: -20px;
+        }
+
+        .themecontainer {
+            position: relative;
+            top: 20px;
+            
+
+        }
+
+        .theme_top {
+            position: relative;
+            top: 10px;
+            height: 30px;
+            
+        }
+
+        .theme_top_left {
+            float: left;
+            
+        }
+
+        .theme_top_right {
+            float: right;
+        }
+
+        #theme_top_right_set {
+            cursor: pointer;
+           
+        }
+
+        #theme_top_right_set:hover {
+            text-decoration: underline;
+
+        }
+
+        .theme_nav {
+            position: relative;
+            padding-top: 15px;
+        }
+
+        .theme_nav_table {
+            width: 100%;
+            height: 50px;
+            border-collapse:collapse;
+            text-align: center;
+            
+        }
+
+        .theme_nav_table td {
+            position: relative;
+            border: 1px solid #d5dadb;
+            width: 100px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .theme_nav_button {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 22px;
+        }
+
+        .theme_nav_button img {
+            width: 36px;
+            border: 1px solid #d5dadb;
+            border-radius: 18px;
+            cursor: pointer;
+        }
+
+        #theme_nav_button_left {
+            position: absolute;
+            left: -20px;
+        }
+
+        #theme_nav_button_right {
+            position: absolute;
+            right: -20px;
+        }
+
+        .theme_nav_table #r1:hover {
+            color: rgb(235, 111, 10);
+        }
+
+        .theme_nav_table #r3:hover {
+            color: rgb(104, 171, 197);
+        }
+
+        .theme_nav_table #r4:hover {
+            color: rgb(142, 219, 27);
+        }
+
+        .theme_nav_table #r5:hover {
+            color: rgb(92, 141, 17);
+        }
+
+        .theme_nav_table #r6:hover {
+            color: orange;
+        }
+
+        .theme_nav_table #r7:hover {
+            color: rgb(36, 188, 226);
+        }
+
+        .theme_nav_table #r8:hover {
+            color: rgb(46, 44, 41);
+        }
+
+        .theme_main {
+            position: relative;
+            width: 700px;
+            padding-top: 15px;
+           
+
+            
+        }
+
+        .theme_main_img {
+            overflow: hidden;
+            height: 180px;
+        }
+
+        .theme_main_img img{
+            position: relative;
+            width: 360px;
+            height: 200px;
+            transform: scale(1);
+            transition: 0.1s;
+
+        }
+
+        .theme_main_img img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .theme_main_left {
+            position: absolute;
+            left: 0px;
+            
+ 
+        }
+
+        .theme_main_right {
+            position: absolute;
+            right: -40px;            
+            
+        }
+
+        .tv_ico_left{
+            position: absolute;
+            bottom: 80px;
+            left: 15px;
+        }
+
+        .tv_ico_left img{
+            width: 25px;
+            height: 25px;
+        }
+
+        .tv_ico_right{
+            position: absolute;
+            bottom: 80px;
+            left: 15px;
+        }
+
+        .tv_ico_right img{
+            width: 25px;
+            height: 25px;
+        }
+
+        #main_subject {
+            margin-top: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #0147b5;
+        }
+
+        #main_text {
+            margin-top: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            color: black;
+        }
+
+        #main_text:hover {
+            text-decoration: underline;
+        }    
+
+        #main_src {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #505050;;
+        }
+
+        .theme_subnav {
+            position: relative;
+            height: 50px;
+            top: 270px;
+            background-color: #f7f9fa;
+            border: 1px solid #dae1e6;
+            
+        }
+
+        .subnav_text_home {
+            position: relative;
+            font-size: 13px;
+            font-weight: bold;
+            color: #0147b5;
+            text-align: center;
+            padding-right: 10px;
+            left: 15px;
+            top: 15px;
+            cursor: pointer;
+        }
+
+        .subnav_text_home:hover {
+            text-decoration: underline;
+        }
+
+        .subnav_text_stick {
+            height: 20px;
+            position: relative;
+            text-align: center;
+            left: 20px;
+            top: 10px;
+            vertical-align: middle;
+        }
+
+        .subnav_text {
+            position: relative;
+            font-size: 13px;
+            font-weight: bold;
+            left: 15px;
+            top: 15px;
+            padding-left: 20px;
+            cursor: pointer;
+        }
+
+        .subnav_text:hover {
+            text-decoration: underline;
+        }
+        
+        .theme_other_contents {
+            position: relative;
+            top: 285px;
+            height: 800px;
+        }
+
+        .contents_line {
+            position: relative;
+            height: 230px;
+            margin-bottom: 20px;
+        }
+
+        .contents_vertical {
+            position: relative;
+            display: block;
+            width: 230px;
+            height: 230px;
+            float: left;
+            margin-left: 5px;
+            margin-right: 10px;;
+            cursor: pointer;
+
+        }
+
+        .contents_img_area {
+            position: relative;
+            width: 230px;
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .contents_img img {
+            transform: scale(1);
+            transition: 0.1s;
+        }
+
+        .contents_img img:hover {
+            transform: scale(1.1);
+        }
+
+        .contents_info_area {
+            position: relative;
+            padding-top: 12px;
+            width: 230px;
+            height: 85px;
+        }
+
+        .contents_info_subject {
+            font-size: 12px;
+            font-weight: bold;
+            color: #0147b5;
+        }
+
+        .contents_info_text {
+            margin-top: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .contents_info_text:hover {
+            text-decoration: underline;
+        }
+
+        .contents_info_src {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #505050;;
+        }
+
+        .contents_tv_ico {
+            position: relative;
+            bottom: 35px;
+            left:15px;
+        }
+
+        .contents_tv_ico img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .contents_bottom_line {
+            height: 15px;
+            background-color: none;
+            border-top: 1px solid #dae1e6;
+        }
+
+        .contents_bottom_more {
+            position: relative;
+            text-align: center;
+            background-color: none;
+            top: -38px;
+            
+        }
+
+        .contents_bottom_more img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .contents_bottom_text {
+            background-color: none;
+            position: relative; 
+            text-align: center;
+            font-size: 12px;
+            top: -33px;
+            cursor: pointer;
+        }
+
+        .shopping_area {
+            position: relative;
+            width: 94%;
+            height: 1540px;
+            top: 10px;
+            border: 1px solid black;
+        }
+
+        .shopping_head {
+            height: 45px;
+            border: 1px solid black;
+        }
+
+        .shopping_body {
+            height: 1455px;
+            border: 1px solid black;
+        }
+
+        .body_shopping_item {
+            height: 885px;
+            border: 1px solid black;
+        }
+        
+        .body_shopping_news {
+            height: 260px;
+            border: 1px solid black;
+        }
+
+        .body_shopping_other {
+            height: 275px;
+            border: 1px solid black;
+        }
+
+
     </style>
 
 </head>
 <body>
-    <header id="top">
+    <div class="total_container">
+    <header class="top">
         <div class="top_container">
             <div class="t_logoside">
                 <div class="t_l_rightside">
@@ -106,22 +980,17 @@
                         id="rs_setstart"
                         href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719">
                         네이버를 시작페이지로
-                        
+
                     </a>
                     <img
-                            id="setstartimg"
-                            src="resources/img/logo/set_start.png"
-                            alt=""
-                            height="23px;"
-                            width="23px"
-                            style="cursor:hand;" onclick="self.location.href='https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719'"
-                            >
-                            <img
-                            id="sidebarstick"
-                            src="resources/img/logo/stick.png"
-                            alt=""
-                            height="10px;"
-                            >
+                        id="setstartimg"
+                        src="resources/img/logo/set_start.png"
+                        alt=""
+                        height="23px;"
+                        width="23px"
+                        style="cursor:hand;"
+                        onclick="self.location.href='https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719'">
+                    <img id="sidebarstick" src="resources/img/logo/stick.png" alt="" height="10px;">
 
                     <a id="rs_jrnaver" href="https://jr.naver.com/">
                         <img
@@ -156,19 +1025,677 @@
                     </div>
                     <div class="t_l_leftside_searchbar">
                         <form method="get" action="http://search.naver.com/search.naver">
-                            <input id="searchbar" name="query">
-                            <input id="confirm_search" name="search" type="image" src="resources/img/logo/search_back.png" alt="submit">
-
+                            <input id="searchbar" name="query" c>
+                            <input
+                                id="confirm_search"
+                                name="search"
+                                type="image"
+                                src="resources/img/logo/search_back.png"
+                                alt="submit">
                         </form>
-                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="menu side"></div>
+        <div class="top_menuside">
+            <div class="t_nav">
+                <nav class="t_nav_menu">
+                    <a class="nav_left" href="https://mail.naver.com/">
+                        <img id="mail_nav" src="resources/img/logo/mail_nav.png" alt="mail_nav">메일</a>
+                    <a class="nav_left" href="https://section.cafe.naver.com/">카페</a>
+                    <a class="nav_left" href="https://section.blog.naver.com/">블로그</a>
+                    <a class="nav_left" href="https://kin.naver.com/">지식iN</a>
+                    <a class="nav_left" href="https://shopping.naver.com/">쇼핑</a>
+                    <a class="nav_left" href="https://order.pay.naver.com/home">Pay</a>
+                    <a class="nav_left" href="https://tv.naver.com/">
+                        <img id="tv_nav" src="resources/img/logo/tv_nav.png" alt="tv_nav">TV</a>
 
+                    <a class="nav_right" href="https://dict.naver.com/">사전</a>
+                    <a class="nav_right" href="https://news.naver.com/">뉴스</a>
+                    <a class="nav_right" href="https://finance.naver.com/">증권</a>
+                    <a class="nav_right" href="https://land.naver.com/">부동산</a>
+                    <a class="nav_right" href="https://map.naver.com/">지도</a>
+                    <a class="nav_right" href="https://movie.naver.com/">영화</a>
+                    <a class="nav_right" href="https://vibe.naver.com/">VIBE</a>
+                    <a class="nav_right" href="https://book.naver.com/">책</a>
+                    <a class="nav_right" href="https://comic.naver.com/">웹툰</a>
+
+                </nav>
+                <div class="t_nav_more">
+                    <details>
+                        <summary>
+                            더보기
+                            <img id="more_nav" src="resources/img/logo/more_nav.png" alt="more_nav" width="12px;">
+                        </summary>
+                        <div class="t_nav_more_after">
+                            <div class="t_nav_more_after_container">
+                                <div class="after_container">
+                                    <div id="after_container_title">ㄱ-ㅁ</div>
+                                    날씨<br>
+                                    네이버 MY CAR<br>
+                                    네이버 게임<br>
+                                    네이버 예약<br>
+                                    네이버플러스 멤버십<br>
+                                    뉴스<br>
+                                    데이터랩<br>
+                                    메모<br>
+                                </div>
+                                <div class="after_container"></div>
+                                <div class="after_container"></div>
+                                <div class="after_container"></div>
+                                <div class="after_container"></div>
+                                <div class="after_container"></div>
+                                <div class="after_container"></div>
+                            </div>
+                        </div>
+                        <div class="t_nav_more_set">
+
+                        </div>
+                            
+                    </details>
+                </div>
+                <div class="t_nav_rank">
+                    <span id="search_rank_num"></span>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main_container">
+            <div class="main_ad">
+                <a  href="https://business.naver.com/service.html">
+                    <img id="main_ad_img" src="resources/img/ad/mainad.jpg" alt="main_ad">
+                </a>
+            </div>
+            <div class="newsarea">
+                <div class="news_summary">
+
+                    <div class="summary_left">
+                    <a class="summary01" href="https://news.naver.com/main/list.nhn?mode=LSD&mid=sec&sid1=001">연합뉴스<img class="summary_arrow" src="resources/img/main/arrowright.png" alt="arrowright"></a>
+                    
+                    <a class="summary02" href="https://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0012160463">안희정·박원순에 김종철까지…진보진영 도덕성에 큰 타격</a>
+                    
+                    </div>
+                    <div class="summary_right">
+                        <a class="summary03" href="https://news.naver.com/">네이버뉴스</a>
+                    <img class="summary_dot" src="resources/img/main/dot.png" alt="dot">
+                    <a class="summary04" href="https://entertain.naver.com/home">연예</a>
+                    <a class="summary05" href="https://sports.news.naver.com/index.nhn">스포츠</a>
+                    <a class="summary06" href="https://news.naver.com/main/main.nhn?mode=LSD&mid=shm&sid1=101">경제</a>
+                    </div>
+                    
+                </div>
+                <div class="news_table">
+                    <div class="news_table_head">
+                        <span class="table_head_left">
+                            <a href="https://newsstand.naver.com/">
+                                <img src="resources/img/newsstand/newshead.png" alt="newshead" width="28px" height="28px" style="vertical-align: text-bottom;">
+                                뉴스스탠드
+                                <img src="resources/img/main/arrowright.png" alt="arrowright" width="7px" height="10px">
+                            </a>
+                            <span id="newsleft_text">구독한 언론사</span>
+                            <img src="resources/img/main/dot.png" alt="dot" width="5px" height="5px">
+                            <span id="newsleft_text" style="font-weight: bold;">전체언론사</span>
+                        </span>
+                            <span class="table_head_right">
+                                <img src="resources/img/newsstand/newslist_lightgray.png" 
+                                onmouseover="this.src='resources/img/newsstand/newslist_gray.png'"
+                                onmouseout="this.src='resources/img/newsstand/newslist_lightgray.png'"
+                                alt="">
+                                <img src="resources/img/newsstand/newsbox_blue.png"
+                                alt="">
+                                <a href="https://newsstand.naver.com/config.html">
+                                    <img src="resources/img/newsstand/newsset_rightgray.png"
+                                    onmouseover="this.src='resources/img/newsstand/newsset_gray.png'"
+                                    onmouseout="this.src='resources/img/newsstand/newsset_rightgray.png'" alt="">
+                                </a>
+                            </span>
+                    </div>
+                    <div class="news_table_data">
+                        <div id="table_button_left" class="table_button">
+                            <img
+                            src="resources/img/main/circlearrow_left_lightgray.png"
+                            onmouseover="this.src='resources/img/main/circlearrow_left_black.png'"
+                            onmouseout="this.src='resources/img/main/circlearrow_left_lightgray.png'"
+                            alt="table_button_left"
+                            >
+                        </div>
+                        
+                        <div id="table_button_right" class="table_button">
+                            <img
+                        src="resources/img/main/circlearrow_right_lightgray.png"
+                        onmouseover="this.src='resources/img/main/circlearrow_right_black.png'"
+                        onmouseout="this.src='resources/img/main/circlearrow_right_lightgray.png'"
+                        alt="table_button_left"
+                        >
+                        </div>
+                        
+                        <table> 
+                            <tr>
+                                <td>
+                                    <img src="resources/img/newsstand/002.png" alt="002">
+                                </td>
+                                <td>
+                                    <img src="resources/img/newsstand/003.png" alt="003">
+                                </td>
+                                <td>
+                                    <img src="resources/img/newsstand/005.png" alt="005">
+                                </td>
+                                <td>
+                                    <img src="resources/img/newsstand/006.png" alt="006">
+                                </td>
+                                <td>
+                                    <img src="resources/img/newsstand/008.png" alt="008"></td>
+                                <td><img src="resources/img/newsstand/009.png" alt="009"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="resources/img/newsstand/011.png" alt="011"></td>
+                                <td><img src="resources/img/newsstand/014.png" alt="014"></td>
+                                <td><img src="resources/img/newsstand/015.png" alt="015"></td>
+                                <td><img src="resources/img/newsstand/016.png" alt="016"></td>
+                                <td><img src="resources/img/newsstand/018.png" alt="018"></td>
+                                <td><img src="resources/img/newsstand/020.png" alt="020"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="resources/img/newsstand/021.png" alt="021"></td>
+                                <td><img src="resources/img/newsstand/022.png" alt="022"></td>
+                                <td><img src="resources/img/newsstand/025.png" alt="025"></td>
+                                <td><img src="resources/img/newsstand/028.png" alt="028"></td>
+                                <td><img src="resources/img/newsstand/029.png" alt="029"></td>
+                                <td><img src="resources/img/newsstand/030.png" alt="030"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="resources/img/newsstand/031.png" alt="031"></td>
+                                <td><img src="resources/img/newsstand/032.png" alt="032"></td>
+                                <td><img src="resources/img/newsstand/038.png" alt="038"></td>
+                                <td><img src="resources/img/newsstand/044.png" alt="044"></td>
+                                <td><img src="resources/img/newsstand/047.png" alt="047"></td>
+                                <td><img src="resources/img/newsstand/052.png" alt="052"></td>
+                            </tr>
+
+                        </table>
+
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="themecontainer">
+                <div class="theme_top">
+                    <div class="theme_top_left">
+                        <span style="font-size: 14px; font-weight: bold;">오늘 읽을만한 글</span>
+                        <span style="font-size: 12px; color: #7b7f80;">주제별로 분류된 다양한 글 모음</span>                        
+                    </div>
+                    <div class="theme_top_right">
+                        <span style="font-size: 12px; font-weight: bold;">1800</span>
+                        <span style="font-size: 12px; color: #3f4041;">개의 글</span>
+                        <img src="resources/img/main/stick.png" height="10px;" style="padding-left: 5px; padding-right: 5px;">
+                        <span id="theme_top_right_set" style="font-size: 12px; color: #434546;"><img src="resources/img/main/set_rightgray.png" 
+                            onmouseover="this.src='resources/img/main/set_gray.png'"
+                            onmouseout="this.src='resources/img/main/set_rightgray.png'"
+                            width="11px;" height="11px;" style="vertical-align: middle; color: #7b7f80;" alt="themeset">관심주제 설정</span>
+                    </div>
+                </div>
+                <div class="theme_nav">
+                    <table class="theme_nav_table">
+                        <tr>
+                            <td id="r1">엔터</td>
+                            <td id="r2" style="background-color:#0147b5; color: white;">스포츠</td>
+                            <td id="r3">자동차</td>
+                            <td id="r4">웹툰</td>
+                            <td id="r5">경제M</td>
+                            <td id="r6">푸드</td>
+                            <td id="r7">게임</td>
+                            <td id="r8">영화</td>
+                        </tr>
+                    </table>
+                    <div class="theme_nav_button">
+                        <img id="theme_nav_button_left"
+                            src="resources/img/main/circlearrow_left_lightgray.png"
+                            onmouseover="this.src='resources/img/main/circlearrow_left_black.png'"
+                            onmouseout="this.src='resources/img/main/circlearrow_left_lightgray.png'"
+                            alt="theme_nav_button_left"
+                            >
+                        <img id="theme_nav_button_right"
+                        src="resources/img/main/circlearrow_right_lightgray.png"
+                        onmouseover="this.src='resources/img/main/circlearrow_right_black.png'"
+                        onmouseout="this.src='resources/img/main/circlearrow_right_lightgray.png'"
+                        alt="theme_nav_button_right"
+                        >
+                    </div>
+                    
+                </div>
+                <div class="theme_main">
+                    <div class="theme_main_left">
+                        <a href="https://sports.news.naver.com/volleyball/vod/index.nhn?id=757593&category=wkovo&gameId=20210127017F146&date=20210127&listType=game">
+                            <div class="theme_main_img">
+                            <img src="resources/img/main/theme/main_left.jpg" alt="">
+                            </div>
+                            <div class="tv_ico_left">
+                            <img src="resources/img/main/tv_in_icon.png" alt="">
+                            </div>
+                            
+                            <div id="main_subject">아찔한 순간</div>
+                            <div id="main_text">'미안해...' 얼굴에 공을 맞은 김주하에게 바로 사과하는 박정아</div>
+                            <div id="main_src">프로배구 네이버스포츠</div>
+
+                        </a>
+                    </div>
+                    <div class="theme_main_right">
+                        <a href="https://sports.news.naver.com/basketball/vod/index.nhn?id=757581&category=wkbl&gameId=202101270410168&date=20210127&listType=game">
+                            <div class="theme_main_img">
+                            <img src="resources/img/main/theme/main_right.jpg" alt="">
+                        </div>
+                        <div class="tv_ico_right">
+                            <img src="resources/img/main/tv_in_icon.png" alt="">
+                        </div>
+                            <div id="main_subject">개인기록</div>
+                            <div id="main_text">'역대 48번째' 통산 2,000득점을 달성하는 박지수</div>
+                            <div id="main_src">여자프로농구_네이버스포츠</div>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="theme_subnav">
+                    <span class="subnav_text_home">스포츠 홈</span>
+                    <img class="subnav_text_stick" src="resources/img/main/stick.png" alt="">
+                    <span class="subnav_text">야구</span>
+                    <span class="subnav_text">해외야구</span>
+                    <span class="subnav_text">축구</span>
+                    <span class="subnav_text">해외축구</span>
+                    <span class="subnav_text">농구</span>
+                    <span class="subnav_text">배구</span>
+                    <span class="subnav_text">골프</span>
+                    <span class="subnav_text">일반</span>
+                    <span class="subnav_text">e스포츠&게임</span>
+
+
+                </div>
+                <div class="theme_other_contents">
+                    <div id="line01" class="contents_line">
+                        <span id="vertical01" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents11.jpg" alt="contents01">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">명장면</div>
+                                <div class="contents_info_text">'추격 시작!' 4연속 득점으로 점수 차를 좁히는 KB손해보험</div>
+                                <div class="contents_info_src">프로배구 네이버스포츠</div>
+                            </div>
+                            
+                        </span>
+                        <span id="vertical02" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents12.jpg" alt="contents02">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">핫클립</div>
+                                <div class="contents_info_text">경남FC 설기현 감독이 말하는 '설싸커'</div>
+                                <div class="contents_info_src">포포투 코리아</div>
+                            </div>
+
+                        </span>
+                        <span id="vertical03" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents13.jpg" alt="contents03">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">구단특집</div>
+                                <div class="contents_info_text">수원FC, Welcome 박주호 인터뷰 영상</div>
+                                <div class="contents_info_src">수원FC - SUWON FOOTBALL CLUB</div>
+                            </div>
+
+                        </span>
+                    </div>
+                    <div id="line02" class="contents_line">
+                        <span id="vertical01" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents21.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">인터뷰</div>
+                                <div class="contents_info_text">이대호한테 영구 결번이란? 인터뷰3편</div>
+                                <div class="contents_info_src">이영미TV</div>
+                            </div>
+                            
+                        </span>
+                        <span id="vertical02" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents22.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">레슨</div>
+                                <div class="contents_info_text">[김주형 레슨] '골프 신동' 똑바로 멀리치는 노하우</div>
+                                <div class="contents_info_src">SBS골프 아카데미</div>
+                            </div>
+
+                        </span>
+                        <span id="vertical03" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents23.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">네이버스포츠</div>
+                                <div class="contents_info_text">다시 돌아왔다! 2021시즌 KLPGA투어에서 보는 반가운 얼굴</div>
+                                <div class="contents_info_src">네이버스포츠</div>
+                            </div>
+
+                        </span>
+                    </div>
+                    <div id="line03" class="contents_line">
+                        <span id="vertical01" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents31.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">핫클립</div>
+                                <div class="contents_info_text">SK의 아름다운 퇴장? 모기업이 박수를 받아야 하는 이유는? | DKTV</div>
+                                <div class="contents_info_src">DKTV</div>
+                            </div>
+                            
+                        </span>
+                        <span id="vertical02" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents32.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">네이버스포츠</div>
+                                <div class="contents_info_text">SNS대란템 주인공 건강한 친구들, 홈트 역대급 혜택</div>
+                                <div class="contents_info_src">네이버스포츠</div>
+                            </div>
+
+                        </span>
+                        <span id="vertical03" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents33.png" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">핫클립</div>
+                                <div class="contents_info_text">[황희찬 이슈] 황희찬 EPL 진출? 손흥민과 코리안 더비 가능성도 UP</div>
+                                <div class="contents_info_src">인터티비</div>
+                            </div>
+
+                        </span>
+                    </div>
+                    <div id="line04" class="contents_line">
+                        <span id="vertical01" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents41.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">네이버스포츠</div>
+                                <div class="contents_info_text">[쇼핑 기획전] 소띠 분들에게 딱 맞는 볼빅 캐릭터 볼!</div>
+                                <div class="contents_info_src">네이버스포츠</div>
+                            </div>
+                            
+                        </span>
+                        <span id="vertical02" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents42.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">네이버스포츠</div>
+                                <div class="contents_info_text">웨스트브롬 0-5 CITY H/L 맨시티 공식 채널에서 확인하세요!</div>
+                                <div class="contents_info_src">네이버스포츠</div>
+                            </div>
+
+                        </span>
+                        <span id="vertical03" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents43.png" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">하이라이트</div>
+                                <div class="contents_info_text">레알 베티스 vs 레알 소시에다드 - 하이라이트 [국왕컵 16강]</div>
+                                <div class="contents_info_src">코파 델 레이 (네이버스포츠)</div>
+                            </div>
+
+                        </span>
+                    </div>
+                    <div id="line05" class="contents_line">
+                        <span id="vertical01" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents51.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">골영상</div>
+                                <div class="contents_info_text">'환상적인 퍼스트 터치' 원더골 만들어내는 이글레시아스 [국왕컵 16강]</div>
+                                <div class="contents_info_src">코파 델 레이 (네이버스포츠)</div>
+                            </div>
+                            
+                        </span>
+                        <span id="vertical02" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents52.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">특집영상</div>
+                                <div class="contents_info_text">'KPGA 출신' 마크 레시먼 드라이버 샷 분석</div>
+                                <div class="contents_info_src">GOLFTV X PGA TOUR</div>
+                            </div>
+
+                        </span>
+                        <span id="vertical03" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents53.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">다시보기</div>
+                                <div class="contents_info_text">HLE-BRO 1세트</div>
+                                <div class="contents_info_src">리그 오브 레전드 네이버스포츠</div>
+                            </div>
+
+                        </span>
+                    </div>
+                    <div id="line06" class="contents_line">
+                        <span id="vertical01" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents61.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">하이라이트</div>
+                                <div class="contents_info_text">HLE-BRO 2세트 하이라이트</div>
+                                <div class="contents_info_src">리그 오브 레전드 네이버스포츠</div>
+                            </div>
+                            
+                        </span>
+                        <span id="vertical02" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents62.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">개인기록</div>
+                                <div class="contents_info_text">'역대 통산 1호' 리시브 정확 5,000개를 달성하는 임명옥</div>
+                                <div class="contents_info_src">프로배구 네이버스포츠</div>
+                            </div>
+
+                        </span>
+                        <span id="vertical03" class="contents_vertical">
+                            <div class="contents_img_area">
+                                <div class="contents_img">
+                                    <img src="resources/img/main/theme/contents63.jpg" alt="">
+                                </div>
+                                <i class="contents_tv_ico">
+                                    <img src="resources/img/main/tv_in_icon.png" alt="">
+                                </i>
+                            </div>
+                            <div class="contents_info_area">
+                                <div class="contents_info_subject">명장면</div>
+                                <div class="contents_info_text">'못을 박습니다' 높은 집중력으로 역전에 성공하는 현대건설</div>
+                                <div class="contents_info_src">프로배구 네이버스포츠</div>
+                            </div>
+
+                        </span>
+                    </div>
+                    <div class="contents_bottom">
+                        <div class="contents_bottom_line"></div>
+                        <div class="contents_bottom_more">
+                            <img src="resources/img/main/main_more_plus.png" alt="">
+                            
+                        </div>
+                        <div class="contents_bottom_text">새로운 글 더보기</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="side_container">
+            <div class="login_area">
+
+                <p id="login_text">네이버를 더 안전하고 편리하게 이용하세요</p>     
+                    <a class="login_button" href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+                            <img id="login_img" src="resources/img/main/right/login.png" alt="login_button"> <span id="button_text">로그인</span>
+                    </a>
+                <div class="login_other">
+                    <div class="login_find">
+                        <img id="l_other_img" src="resources/img/main/right/login_lock.png" alt="">
+                    <a id="login_other_link" href="https://nid.naver.com/user2/help/idInquiry.nhn?menu=idinquiry">아이디</a>
+                    <span id="login_other_dot">.</span>
+                    <img id="l_other_img" src="" alt="">
+                    <a id="login_other_link" href="https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry">비밀번호찾기</a>
+                    </div>
+                    <div class="login_join">
+                        <img id="l_other_img" src="resources/img/main/right/login_join.png" alt="">
+                        <a id="login_other_link" href="https://nid.naver.com/user2/V2Join.nhn?m=agree&lang=ko_KR&cpno=">회원가입</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_summary">
+                
+                <a href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EC%BD%94%EB%A1%9C%EB%82%9819">
+                    <div class="covid_issue">이슈</div>
+                    <div class="covid_text">코로나바이러스감염증19 현황</div>
+                    </a>
+
+                    <div class="covid_button">
+                        <button><img src="resources/img/main/arrowleft_gray.png" alt=""></button>
+                        <button><img src="resources/img/main/arrowright_gray.png" alt=""></button>
+                    </div>
+                    
+                    
+                    
+                
+            </div>
+            <div class="slide_ad">
+                <a href="https://lineagem.plaync.com/update/2021/210115_update?LM=12020102#section-3">
+                    <img id="slide_ad_img"src="resources/img/ad/sidead.jpg" alt="slide_ad_img">
+                </a>
+                
+
+            </div>
+            <div class="shopping_area">
+                <div class="shopping_head">
+
+                </div>
+                <div class="shopping_body">
+                    <div class="body_nav">
+                        
+                    </div>
+                    <div class="body_contents">
+                        <div class="body_shopping_item"></div>
+                        <div class="body_shopping_news"></div>
+                        <div class="body_shopping_other"></div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
 </div>
-
-</header>
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    
+    img {
+        vertical-align: middle;
+        width: 300px;
+        height: 300px;
+    }
+
+    a {
+        font-size: 30px;
+        text-decoration: none;
+    }
+    </style>
+
+    <script type="text/javascript">
+    
+    window.onload=function(){
+        var anchs = document.querySelectorAll("a");
+        var img = document.querySelector("img");
+        var cnt = 1;
+
+        anchs[0].onclick=function(){
+            var imgAlt = img.getAttribute("alt");
+            if (imgAlt == "img01") {
+                cnt = 3;
+                img.setAttribute("alt", "img03");
+                img.setAttribute("src", "resources/image/img0"+cnt+".png");
+            } else if (imgAlt == "img02") {
+                cnt = 1;
+                img.setAttribute("alt", "img01");
+                img.setAttribute("src", "resources/image/img0"+cnt+".png");
+                
+            } else if (imgAlt == "img03") {
+                cnt = 2;
+                img.setAttribute("alt", "img02");
+                img.setAttribute("src", "resources/image/img0"+cnt+".png");
+                
+            }
+        }
+
+        anchs[1].onclick=function() {
+            
+            var imgAlt = img.getAttribute("alt");
+            if (imgAlt == "img01") {
+                cnt = 2;
+                img.setAttribute("alt", "img02");
+                img.setAttribute("src", "resources/image/img0"+cnt+".png");
+            } else if (imgAlt == "img02") {
+                cnt = 3;
+                img.setAttribute("alt", "img03");
+                img.setAttribute("src", "resources/image/img0"+cnt+".png");
+                
+            } else if (imgAlt == "img03") {
+                cnt = 1;
+                img.setAttribute("alt", "img01");
+                img.setAttribute("src", "resources/image/img0"+cnt+".png");
+                
+            }
+        
+    }
+
+}
+    
+    </script>
+
+</head>
+<body>
+
+    <div>
+        <a href="#" id="it">◀</a>
+        <img src="resources/image/img01.png" alt="img01">
+        <a href="#" id="gt">▶</a>
+
+    </div>
+    
+</body>
+</html>
