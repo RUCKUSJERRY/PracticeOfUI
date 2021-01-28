@@ -17,6 +17,7 @@
         .total_container {
             width: 100%;
             height: 100%;
+            
         }
 
 
@@ -26,9 +27,9 @@
 
         .top_container {
             position: relative;
-            width: 60%;
+            width: 1150px;
             margin: 0 auto;
-            
+
 
         }
 
@@ -36,9 +37,6 @@
             position: relative;
             width: 100%;
             height: 160px;
-            padding-left: 15px;
-            padding-right: 15px;
-
 
         }
 
@@ -47,15 +45,15 @@
             height: 52px;
             border-top: 1px solid #e4e8eb;
             box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+            
         }
 
         .t_logoside > .t_l_rightside {
-            width: 255px;
-            position: absolute;
-            top: 10px;
-            right: 40px;
-            text-align: left;
-            float: right;
+            display: block;
+            width: 100%;
+            height: 40px;
+            text-align: right;
+
         }
 
         #setstartimg {
@@ -68,35 +66,49 @@
         }
 
         .t_l_leftside {
-            display: block;
             position: relative;
             width: 100%;
-            height: 200px;
-            top: 50px;
+            height: 120px;
 
+        }
+
+        .t_l_leftside_wrap {
+            width: 100%;
+            height: 100%;
         }
 
         .t_l_leftside_logo {
-            position: relative;
-            width: 300px;
-            height: 200px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;        
 
         }
 
+        .t_l_leftside_logo a {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            
+        }
+
         .t_l_leftside_searchbar {
-            top: -195px;
-            left: 240px;
+            position: absolute;
+            margin: auto;
+            top: 5px;
+            left: 0;
+            right: 20px;
             height: 53px;
-            width: 612px;
-            position: relative;
+            width: 600px;
             border: 2px solid #19ce60;
             
 
         }
 
         #searchbar {
-            
-            width: 525px;
+            width: 500px;
             margin: 15px;
             border: 0;
             vertical-align: top;
@@ -106,7 +118,6 @@
         }
 
         #confirm_search {
-            
             float: right;
             width: 53px;
             height: 53px;
@@ -117,6 +128,7 @@
         .t_nav {
             position: relative;
             width: 1150px;
+            height: 50px;
             margin: 0 auto;
             padding-left: 15px;
             padding-right: 15px;
@@ -126,13 +138,12 @@
 
         .t_nav_menu {
             position: relative;
-            width: 830px;
+            width: 850px;
             top: 10px;
             height: 50px;
         }
 
         .t_nav_menu a {
-
             font-size: 15px;
             font-weight: bold;
             padding-left: 13px;
@@ -208,10 +219,30 @@
 
         .main {
             position: relative;
-            width: 1150px;
+            padding-top: 20px;
+            width: 1180px;
+            height: 1950px;
             margin: 0 auto; 
-            top: -20px;
             
+            
+        }
+
+        .main_container {
+            position: relative;
+            width: 800px;
+            float: left;
+            height: 1950px;
+            overflow: scroll;
+            
+        }
+
+        .main_container_wrap {
+            width: 750px;
+            margin: 0 auto;
+        }
+
+        .main_container::-webkit-scrollbar {
+            display: none;
         }
 
         #main_ad_img {
@@ -219,28 +250,20 @@
             
         }
 
-
-
-        .main_container {
-            position: relative;
-            width: 65%;
-            float: left;
-        }
-
         .side_container {
             position: relative;
-            float: right;
-            width: 32%;
+            float: left;
+            width: 355px;
+            height: 1950px;
             
         }
 
         .login_area {
-            width: 85%;
+            width: 315px;
             height: 110px;
             background-color: #f7f9fa;
             border: 1px solid #dae1e6;
-            padding: 10px 15px 15px 15px;
-            
+            padding: 10px 15px 15px 15px;     
             
         }
 
@@ -275,8 +298,6 @@
             
            
         }
-
-
 
         #login_text {
             color: gray;
@@ -482,8 +503,6 @@
             cursor: pointer;
         }
 
-
-
         .table_head_left a {
             padding: 5px;
             font-weight: bold;
@@ -518,6 +537,7 @@
         
         .slide_ad {
             margin-top: 23px;
+            margin-right: 0;
         }
 
 
@@ -545,11 +565,11 @@
         }
 
         .news_table_data img {
-            width: 50px;
-            height: 25px;
+            width: 50%;
+            height: auto;
             
         }
-
+  
         .news_table_data button {
             border: 1px solid #edeef0;
             background-color: #fff;
@@ -572,7 +592,7 @@
 
         #table_button_left {
             position: absolute;
-            left: -20px;  
+            left: -20px;
         }
 
         #table_button_right {
@@ -938,33 +958,595 @@
             width: 94%;
             height: 1540px;
             top: 10px;
-            border: 1px solid black;
+            
         }
 
         .shopping_head {
+            position: relative;
             height: 45px;
-            border: 1px solid black;
+            
+            
+        }
+
+        .shopping_head_left {
+            float: left;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            padding-top: 15px;
+
+        }
+
+        .shopping_head_left:hover {
+            text-decoration: underline;
+        }
+
+        .shopping_head_left img{
+            vertical-align: text-bottom;
+
+        }
+
+        .shopping_head_right {
+            float: right;
+            cursor: pointer;
+            padding-top: 15px;
+            
+
+        }
+
+        .right_text {
+            font-size: 13px;
+            font-weight: bold;
+            padding-left: 10px;
         }
 
         .shopping_body {
             height: 1455px;
-            border: 1px solid black;
+            border:  1px solid #dae1e6;
+        }
+
+        .body_nav {
+            height:70px;
+            background-color: #f7f9fa;
+            border-bottom: 1px solid #dae1e6;
+        }
+
+        .body_nav_text {
+            padding: 15px;
+            line-height: 20px;
+        }
+
+        .body_nav_text span{
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .body_nav_text span:hover {
+            border-bottom: 1px solid #080808;
+        }
+
+        .body_nav_text img {
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-bottom: 3px;
+            height: 4px;
+            vertical-align: middle;
         }
 
         .body_shopping_item {
-            height: 885px;
-            border: 1px solid black;
+            height: 850px;
+            
+        }
+
+        .item_scroll {
+            height: 40px;
+            
+        }
+
+        #textandscroll {
+            width: 100px;
+            float: right;
+            padding: 5px;
+            
+        }
+
+        #scrolltext {
+            position: relative;
+            top: 5px;
+            float: left;
+            font-size: 12px;
+        }
+
+        #textandscroll table {
+            position: relative;
+            float: right;
+            cursor: pointer;
+
+        }
+
+        #textandscroll td:hover {
+            background-color: #dae1e6;
+        }
+
+        #textandscroll td {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #dae1e6;
+            text-align: center;
+        }
+
+        #textandscroll img {
+            height: 8px;
         }
         
         .body_shopping_news {
             height: 260px;
-            border: 1px solid black;
+
         }
 
         .body_shopping_other {
             height: 275px;
-            border: 1px solid black;
+
         }
+
+        .item_line {
+            position: relative;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            height: 185px;
+        }
+
+        .item_vertical {
+            position: relative;
+            width:104px;
+            height: 180px;
+            margin-right: 3px;
+            float: left;
+            cursor: pointer;
+            
+        }
+
+        .item_img_area {
+            position: relative;
+            width: 104px;
+            height: 145px;
+            overflow: hidden;
+        }
+
+        .item_img_area img {
+            transform: scale(1);
+            transition: 0.1s;
+        }
+
+        .item_img_area img:hover {
+            transform: scale(1.1);
+        }
+
+        .item_text_area {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .item_text_area:hover {
+            text-decoration: underline;
+        }
+        
+        .item_text01 {
+            font-weight: bold;
+        }
+        
+        .item_bottom_scroll {
+            margin: 8px;
+            text-align: center;
+        }
+
+        .bottom_scroll_wrap {
+            width: 120px;
+            display: inline-block;          
+        }
+
+        .bottom_scroll_button {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #e4e8eb;
+            text-align: center;
+            vertical-align: middle;
+            padding-left: 2px;
+            float: left;
+            cursor: pointer;
+        }
+
+        .bottom_scroll_button img {
+            position: relative;
+            width: 6px;
+            height: 9px;
+            top:7px;
+ 
+            
+        }
+
+        .bottom_scroll_text {
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 7px;
+            
+        }
+
+        .bottom_scroll_button:hover {
+            background-color: #dae1e6;
+        }
+
+        .shopping_news_wrap {
+            margin: 8px;
+            border-top: 1px solid #dae1e6;
+        }
+
+        .news_head {
+            height: 40px;
+        }
+
+        #head_title {
+            position: relative;
+            left: 15px;
+            top: 10px;
+            font-size: 13px;
+            font-weight: bold;  
+        }
+
+        .news_list_contents {
+            margin: 8px 10px 10px 8px;
+            cursor: pointer;
+            
+        }
+
+        .news_list_contents img {
+            height: 5px;
+        }
+
+        .news_list_contents:hover {
+            border-bottom: 1px solid black;
+            
+        }
+
+        .news_list_contents span {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+
+        #other_headtext01 {
+            font-size: 13px;
+            border-bottom: 2px solid #19ce60; 
+            color: #03c75a;
+            cursor: pointer;
+        }
+
+        #other_headtext {
+            padding-left: 5px;
+            font-size: 13px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .body_shopping_other_wrap {
+            margin: 8px;
+            border-top: 1px solid #dae1e6;
+        }
+
+        .body_shopping_other_title {
+            height: 40px;
+        }
+        
+        .other_vertical {
+            position: relative;
+            margin-left: 2px;
+            width: 330px;
+            height: 200px;
+        }
+
+        .other_item {
+            position: relative;
+            display: inline-block;
+            left: 5px;
+            width: 155px;
+            margin-right: 3px;
+
+        }
+
+        .other_img_area {
+            width: 155px;
+            overflow: hidden;
+            
+        }
+
+        .other_img_area img {
+            width: 155px;
+            transform: scale(1);
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        
+        .other_img_area img:hover {
+            transform: scale(1.1);
+        }
+
+        .other_text_area {
+            margin: 5px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .other_text_area:hover {
+            text-decoration: underline;
+        }
+
+        .bottom {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            border-top: 1px solid #e4e8eb;
+            background-color: #fafbfc;;
+        }
+
+        .bottom_area_wrap {
+            position: relative;
+            width: 1180px;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 100%;
+        }
+
+        .bottom_event_area {
+            position: relative;
+            width: 98%;
+            height: 110px;
+            
+        }
+
+        .bottom_event_vertical {
+            position: relative;
+            display: inline-block;
+            width: 355px;
+            padding-left: 10px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .bottom_event_img_area {
+            position: relative;
+            display: inline-block;
+            width: 160px;
+            height: 90px;
+            overflow: hidden;
+
+        }
+
+        .bottom_event_img_area img {
+            position: relative;
+            float: left;
+            width: 160px;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            transform:scale(1);
+            transition: 0.1s;
+        }
+
+        .bottom_event_img_area img:hover {
+            transform:scale(1.1);
+        }
+
+        .bottom_event_text_area {
+            position: relative;
+            float: right;
+            padding-top: 10px;
+            width: 180px;
+            height: 80px;
+        }
+
+        .bottom_event_text_01 {
+            font-size: 12px;
+            font-weight: bold;
+            color: #58c464;
+        }
+
+        .bottom_event_text_02 {
+            padding-top: 3px;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            
+        }
+
+        .bottom_event_text_02:hover {
+            text-decoration: underline;
+            
+        }
+
+        .bottom_event_text_03 {
+            font-size: 13px;
+            
+        }
+
+        .bottom_notice_area {
+            position: relative;
+            width: 98%;
+            height: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-top: 1px solid #e4e8eb;
+            border-bottom: 1px solid #e4e8eb;
+            
+        }
+
+        .bottom_notice_area div:hover {
+            text-decoration: underline;
+        }
+
+        .bottom_notice_area_left {
+            position: relative;
+            float: left;
+            padding-left: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .bottom_notice_area_right {
+            position: relative;
+            float: right;
+            padding-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .bottom_notice_area_right img {
+            padding-left: 3px;
+            padding-right: 5px;
+        }
+
+        .bottom_info1_area {
+            position: relative;
+            width: 98%;
+            height: 70px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e4e8eb;
+            
+        }
+
+        .bottom_info1_text_area {
+            position: relative;
+            float: left;
+            width: 65%;
+            height: 100%;
+        }
+
+        .bottom_info1_text_line {
+            position: relative;
+            padding-bottom: 8px;
+            
+        }
+
+        .bottom_info1_text_subject {
+            position: relative;
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+            padding-left: 10px;
+            width: 10%
+            
+        }
+
+        .bottom_info1_text_contents {
+            position: relative;
+            display: inline-block;
+            font-size: 12px;
+            color: #777;
+            cursor: pointer;
+        }
+
+        .bottom_info1_text_contents:hover {
+            text-decoration: underline;
+        }
+
+        .bottom_info1_text_wall {
+            position: relative;
+            display: inline-block;
+        }
+
+        .bottom_info1_text_wall img {
+            padding-left: 5px;
+            padding-right: 5px;
+            height: 10px;
+            vertical-align: middle;
+        }
+
+        .bottom_info1_button_area {
+            position: relative;
+            float: right;
+            width: 33%;
+            height: 100%;
+            padding-bottom: 10px;
+
+        }
+
+        .bottom_info1_button_box {
+            position: relative;
+            display: inline-block;
+            width: 45%;
+            
+        }
+
+        .bottom_info1_button_textbox {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+        }
+
+        .bottom_info1_button_text01 {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .bottom_info1_button_text02 {
+            position: relative;
+            display: inline-block;
+            font-size: 12px;
+            color: #777;
+            cursor: pointer;
+        }
+
+        .bottom_info1_button_text02:hover {
+            text-decoration: underline;
+        }
+
+        .bottom_info1_button_imgbox {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            width: 35%;
+            cursor: pointer;
+        }
+
+        .bottom_info2_area {
+            position: relative;
+            width: 98%;
+            height: 40px;
+
+        }
+
+        .bottom_info2_text_area {
+            padding-top: 25px;
+            padding-left: 8px;
+        }
+
+        .mode_button_area {
+            position: fixed;
+            right: -70px;
+            bottom: 20px;
+            height: 50px;
+            z-index: 5;
+            
+        }   
+
+        .button_wrap {
+            width: 300px;
+            
+        }
+
+        .button_imgarea {
+            display: inline;
+            cursor: pointer;
+        }
+
 
 
     </style>
@@ -972,6 +1554,24 @@
 </head>
 <body>
     <div class="total_container">
+        <div class="mode_button_area">
+            <div class="button_wrap">
+                <div class="button_imgarea">
+                    <img src="resources/img/main/bottom/darkmode_white.png"
+                    onmouseover="this.src='resources/img/main/bottom/darkmode_black.png'"
+                    onmouseout="this.src='resources/img/main/bottom/darkmode_white.png'"
+                     width="135px" height="50px">
+                </div>
+                <div class="button_imgarea">
+                    <img src="resources/img/main/bottom/gotop_white.png"
+                    onmouseover="this.src='resources/img/main/bottom/gotop_green.png'"
+                    onmouseout="this.src='resources/img/main/bottom/gotop_white.png'"
+                    width="50px" height="50px">
+                </div>
+            </div>
+        </div>
+        <div class="total_container_wrap">
+            
     <header class="top">
         <div class="top_container">
             <div class="t_logoside">
@@ -1014,7 +1614,9 @@
 
                 </div>
                 <div class="t_l_leftside">
+                    <div class="t_l_leftside_wrap">
                     <div class="t_l_leftside_logo">
+                        
                         <a href="https://www.naver.com/">
                             <img
                                 src="resources/img/logo/main_logo.png"
@@ -1022,6 +1624,7 @@
                                 width="220px;"
                                 height="55px;">
                         </a>
+                    
                     </div>
                     <div class="t_l_leftside_searchbar">
                         <form method="get" action="http://search.naver.com/search.naver">
@@ -1035,6 +1638,7 @@
                         </form>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="top_menuside">
@@ -1104,6 +1708,7 @@
 
     <section class="main">
         <div class="main_container">
+            <div class="main_container_wrap">
             <div class="main_ad">
                 <a  href="https://business.naver.com/service.html">
                     <img id="main_ad_img" src="resources/img/ad/mainad.jpg" alt="main_ad">
@@ -1625,7 +2230,7 @@
                     </div>
                 </div>
             </div>
-
+        </div>
         </div>
 
         <div class="side_container">
@@ -1674,16 +2279,290 @@
             </div>
             <div class="shopping_area">
                 <div class="shopping_head">
-
+                    <span class="shopping_head_left">
+                        <img src="resources/img/logo/naverlogo.jpg" width="15px;" alt="">
+                        트렌드쇼핑
+                        <img src="resources/img/main/arrowright_gray.png" width="6px;" alt="">
+                    </span>
+                    <span class="shopping_head_right">
+                        <span class="right_text01" style="border-bottom: 2px solid #19ce60; color: #03c75a; font-size: 13px;
+                        font-weight: bold;">상품</span>
+                        <span class="right_text">쇼핑몰</span>
+                        <span class="right_text">MEN</span>
+                    </span>
                 </div>
                 <div class="shopping_body">
                     <div class="body_nav">
-                        
+                        <div class="body_nav_text">
+                            <span style="font-weight: bold;">G마켓</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>옥션</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>11번가</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>위메프</span>
+                            <img src="resources/img/main/dot.png">
+                            <span style="font-weight: bold;">이마트몰</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>티몬</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>신세계몰</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>올리브영</span>
+                            <img src="resources/img/main/dot.png">
+                            <span style="font-weight: bold;">GS샵</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>롯데i몰</span>
+                            <img src="resources/img/main/dot.png">
+                            <span style="font-weight: bold;">롯데ON</span>
+                            <img src="resources/img/main/dot.png">
+                            <span>CJmall</span>
+                        </div>
                     </div>
                     <div class="body_contents">
-                        <div class="body_shopping_item"></div>
-                        <div class="body_shopping_news"></div>
-                        <div class="body_shopping_other"></div>
+                        <div class="body_shopping_item">
+                            <div class="item_scroll">
+                                <div id="textandscroll">
+                                    <div id="scrolltext"><span style="font-weight: bold;">1 </span>
+                                        <span style="color: #666768bb;">/ 18</span>
+                                        </div>
+                                    <table style="border-spacing: 0;">
+                                    <tr>
+                                        <td><img src="resources/img/main/arrowleft_gray.png" alt=""></td>
+                                        <td><img src="resources/img/main/arrowright_gray.png" alt=""></td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="item_list">
+                                <div id="item_line01" class="item_line">
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item11.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">제이에스티나</div>
+                                            <div class="item_text02">아이유 목걸이</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item12.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">구룡포햇과메기</div>
+                                            <div class="item_text02">진공포장산지직송</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item13.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">겨울초특가세일</div>
+                                            <div class="item_text02">운동복 일상복OK</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="item_line02" class="item_line">
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item21.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">굶지말고 먹어봐~</div>
+                                            <div class="item_text02">5일 식단 든든해!</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item22.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">뭐가 이렇게예뻐?</div>
+                                            <div class="item_text02">마켓비 소품 SALE</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item23.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">원더브라 특가</div>
+                                            <div class="item_text02">1만원 쿠폰 증정!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="item_line03" class="item_line">
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item31.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">예쁨에 반해요</div>
+                                            <div class="item_text02">어디든~입기좋아</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item32.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">봄 신상 65%할인</div>
+                                            <div class="item_text02">10,000원 로퍼</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item33.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">집콕피부홈케어</div>
+                                            <div class="item_text02">최대69%↓8,900원</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="item_line04" class="item_line">
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item41.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">설 맞이 특가!</div>
+                                            <div class="item_text02">최대 72% SALE</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item42.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">계속 폭발적반응!</div>
+                                            <div class="item_text02">너무 편해 쟁여둬</div>
+                                        </div>
+                                    </div>
+                                    <div class="item_vertical">
+                                        <div class="item_img_area">
+                                            <img src="resources/img/main/shopping/item43.jpg" alt="">
+                                        </div>
+                                        <div class="item_text_area">
+                                            <div class="item_text01">개미허리 비결?</div>
+                                            <div class="item_text02">지금최대37%↓</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_bottom_scroll">
+                                <div class="bottom_scroll_wrap">
+                                    <div id="bottom_scroll_button_left" class="bottom_scroll_button">
+                                        <img src="resources/img/main/arrowleft_gray.png" ">
+                                    </div>
+                                    <div class="bottom_scroll_text">
+                                        <span style="font-weight: bold;">1 </span>
+                                        <span style="color: #666768bb;">/ 18</span>
+                                    </div>
+                                    <div id="bottom_scroll_button_right" class="bottom_scroll_button">
+                                        <img src="resources/img/main/arrowright_gray.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body_shopping_news">
+                            <div class="shopping_news_wrap">
+                                <div class="news_head">
+                                    <span id="head_title">반갑다! 쇼핑뉴스</span>
+                                    <div id="textandscroll">
+                                        <div id="scrolltext"><span style="font-weight: bold;">1 </span>
+                                            <span style="color: #666768bb;">/ 4</span>
+                                            </div>
+                                        <table style="border-spacing: 0;">
+                                        <tr>
+                                            <td><img src="resources/img/main/arrowleft_gray.png" alt=""></td>
+                                            <td><img src="resources/img/main/arrowright_gray.png" alt=""></td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="news_list">
+                                    <div id="list01" class="news_list_contents">
+                                        <span><img src="resources/img/main/greendot.png" alt=""></span>
+                                        <span style="font-weight: bold;"> 서울샵</span>
+                                        <span> 중소기업 우수 추천상품 모음전</span>
+                                    </div>
+                                    <div id="list02" class="news_list_contents">
+                                        <span><img src="resources/img/main/greendot.png" alt=""></span>
+                                        <span style="font-weight: bold;"> 울산상회</span>
+                                        <span> 울산경제진흥원 중소기업상품추천</span>
+                                    </div>
+                                    <div id="list03" class="news_list_contents">
+                                        <span><img src="resources/img/main/greendot.png" alt=""></span>
+                                        <span style="font-weight: bold;"> 본투로드</span>
+                                        <span> 겨울핸들커버할인 방향제사은품증정</span>
+                                    </div>
+                                    <div id="list04" class="news_list_contents">
+                                        <span><img src="resources/img/main/greendot.png" alt=""></span>
+                                        <span style="font-weight: bold;"> 비락 본사 직영</span>
+                                        <span> 99.9% 원유 올바른우유 특가</span>
+                                    </div>
+                                    <div id="list05" class="news_list_contents">
+                                        <span><img src="resources/img/main/greendot.png" alt=""></span>
+                                        <span style="font-weight: bold;"> 집으로ON</span>
+                                        <span> 든든한 한끼 해결 짜글이 18% 할인</span>
+                                    </div>
+                                    <div id="list06" class="news_list_contents">
+                                        <span><img src="resources/img/main/greendot.png" alt=""></span>
+                                        <span style="font-weight: bold;"> 그녀희재</span>
+                                        <span> 러블리 니트웨어 최대 40% SALE!</span>
+                                    </div>
+                                    <div></div>
+                                    <div id="list07" class="news_list_contents">
+                                        <span><img src="resources/img/main/greendot.png" alt=""></span>
+                                        <span style="font-weight: bold;"> 배러리</span>
+                                        <span> 고려은단 생산! 직장인활력비타민</span>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body_shopping_other">
+                            <div class="body_shopping_other_wrap">
+                            <div class="body_shopping_other_title">
+                                <span id="head_title">
+                                    <span id="other_headtext01">라이프</span>
+                                    <span id="other_headtext">패션</span>
+                                    <span id="other_headtext">디지털･레저</span>
+                                    <span id="other_headtext">뷰티</span>
+                                </span>
+                                    <div id="textandscroll">
+                                        <div id="scrolltext"><span style="font-weight: bold;">1 </span>
+                                            <span style="color: #666768bb;">/ 10</span>
+                                            </div>
+                                        <table style="border-spacing: 0;">
+                                        <tr>
+                                            <td><img src="resources/img/main/arrowleft_gray.png" alt=""></td>
+                                            <td><img src="resources/img/main/arrowright_gray.png" alt=""></td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                            <div class="other_vertical">
+                                <div class="other_item">
+                                    <div class="other_img_area">
+                                        <img src="resources/img/main/shopping/other01.png" alt="">
+                                    </div>
+                                    <div class="other_text_area">구강전문기업 고불소 치약</div>
+                                </div>
+                                <div class="other_item">
+                                    <div class="other_img_area">
+                                        <img src="resources/img/main/shopping/other02.jpg" alt="">
+                                    </div>
+                                    <div class="other_text_area">겨울이불세트 시즌오프!</div>
+                                </div>
+
+                            </div>
+                            </div>
+                            <div></div>
+                        </div>
                         
                     </div>
 
@@ -1693,8 +2572,132 @@
 
     </section>
 
-    <footer>
+    <footer class="bottom">
+        <div class="bottom_area_wrap">
 
+        <div class="bottom_event_area">
+            <div class="bottom_event_vertical">
+                <div class="bottom_event_img_area">
+                    <img src="resources/img/main/bottom/event01.jpg" alt="">
+                </div>
+                <div class="bottom_event_text_area">
+                    <div class="bottom_event_text_01">네이버 해피빈 펀딩</div>
+                    <div class="bottom_event_text_02">택배기사님을 응원해요!</div>
+                    <div class="bottom_event_text_03">택배기사님께 힘을 드리는 기적의 스티커~♥ 얍!</div>
+                </div>
+            </div>
+            <div class="bottom_event_vertical">
+                <div class="bottom_event_img_area">
+                    <img src="resources/img/main/bottom/event02.jpg" alt="">
+                </div>
+                <div class="bottom_event_text_area">
+                    <div class="bottom_event_text_01">D2SF 스타트업</div>
+                    <div class="bottom_event_text_02">프랜차이즈 창업 준비?</div>
+                    <div class="bottom_event_text_03">코로나 시대를 극복할 테마별 창업 정보!</div>
+                </div>
+            </div>
+            <div class="bottom_event_vertical">
+                <div class="bottom_event_img_area">
+                    <img src="resources/img/main/bottom/event03.jpg" alt="">
+                </div>
+                <div class="bottom_event_text_area">
+                    <div class="bottom_event_text_01">네이버 해피빈 펀딩</div>
+                    <div class="bottom_event_text_02">설 명절 기획전</div>
+                    <div class="bottom_event_text_03">올해는 좋아질 거에요 착한 선물로 전하는 인사</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_notice_area">
+            <div class="bottom_notice_area_left">
+                공지사항
+            </div>
+            <div class="bottom_notice_area_right">
+                서비스 전체보기
+                <img src="resources/img/main/arrowright_gray.png" height="10px" width="6px">
+            </div>
+        </div>
+        <div class="bottom_info1_area">
+            <div class="bottom_info1_text_area">
+                <div class="bottom_info1_text_line">
+                    <div class="bottom_info1_text_subject">Creators</div>
+                    <div class="bottom_info1_text_contents">크리에이터</div>
+                    <div class="bottom_info1_text_wall">
+                        <img src="resources/img/main/stick.png">
+                    </div>
+                    <div class="bottom_info1_text_contents">스몰비즈니스</div>
+                </div>
+                <div class="bottom_info1_text_line">
+                    <div class="bottom_info1_text_subject">Partners</div>
+                    <div class="bottom_info1_text_contents">비즈니스･광고</div>
+                    <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                    <div class="bottom_info1_text_contents">스토어 개설</div>
+                    <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                    <div class="bottom_info1_text_contents">지역업체 등록</div>
+                    <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                    <div class="bottom_info1_text_contents">엑스퍼트 등록</div>
+                </div>
+                <div class="bottom_info1_text_line">
+                    <div class="bottom_info1_text_subject"></div>
+                        <div class="bottom_info1_text_subject">Developers</div>
+                        <div class="bottom_info1_text_contents">네이버 개발자 센터</div>
+                        <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                        <div class="bottom_info1_text_contents">오픈 API</div>
+                        <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>  
+                        <div class="bottom_info1_text_contents">오픈소스</div>
+                        <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>  
+                        <div class="bottom_info1_text_contents">네이버 D2</div>
+                        <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>  
+                        <div class="bottom_info1_text_contents">네이버 D2SF</div>
+                        <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>  
+                        <div class="bottom_info1_text_contents">네이버 랩스</div>     
+                </div>
+            </div>
+            <div class="bottom_info1_button_area">
+                <div class="bottom_info1_button_box">
+                    <div class="bottom_info1_button_textbox">
+                        <div class="bottom_info1_button_text01">웨일 브라우저</div>
+                        <div class="bottom_info1_button_text02">다운받기</div>
+                    </div>
+                    <div class="bottom_info1_button_imgbox">
+                        <img src="resources/img/main/bottom/button01.png">
+                    </div>
+                </div>
+                <div class="bottom_info1_button_box">
+                    <div class="bottom_info1_button_textbox">
+                        <div class="bottom_info1_button_text01">프로젝트 꽃</div>
+                        <div class="bottom_info1_button_text02">바로가기</div>
+                    </div>
+                    <div class="bottom_info1_button_imgbox">
+                        <img src="resources/img/main/bottom/button02.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_info2_area">
+            <div class="bottom_info2_text_area">
+                <div class="bottom_info1_text_contents">회사소개</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents">인재채용</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents">제휴제안</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents">이용약관</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents" style="font-weight: bold">개인정보처리방침</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents">청소년보호정책</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents">네이버 정책</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents">고객센터</div>
+                <div class="bottom_info1_text_wall"><img src="resources/img/main/stick.png"></div>
+                <div class="bottom_info1_text_contents">회사소개</div>
+                <div class="bottom_info1_text_contents" style="font-weight: bold; color: black;" >ⓒ NAVER Corp.</div>
+                
+            </div>
+        </div>
+    </div>
+    
     </footer>
 </div>
 </body>

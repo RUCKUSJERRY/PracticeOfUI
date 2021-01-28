@@ -31,9 +31,14 @@
 
     function searchQS() {
         var doc = document.querySelectorAll("#test");
+        // document = 문서 자체
+        // querySelectorAll = 쿼리형태로된 테크를 전부 찾겠다. id가 test인
         doc[0].innerHTML = "querySelectAll(css표현식)";
+        // innerHTML : 재생성해서 전달해줌. 해당 요소의 테크에 전달해줌.
         var doc2 = document.querySelector("#test");
+        // querySelector = 제일 앞에 있는 하나의 테크만 가지고 온다.
         doc2.style.backgroundColor = "green";
+        //
     }
 
     </script>

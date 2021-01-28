@@ -31,36 +31,37 @@
                 cnt = 3;
                 img.setAttribute("alt", "img03");
                 img.setAttribute("src", "resources/image/img0"+cnt+".png");
-            } else if (imgAlt == "img02") {
-                cnt = 1;
-                img.setAttribute("alt", "img01");
-                img.setAttribute("src", "resources/image/img0"+cnt+".png");
-                
-            } else if (imgAlt == "img03") {
-                cnt = 2;
-                img.setAttribute("alt", "img02");
-                img.setAttribute("src", "resources/image/img0"+cnt+".png");
-                
+            } else {
+                --cnt;
+                img.setAttribute("alt", "img0"+cnt);
+                img.setAttribute("src", "resources/image/img0"+cnt+".png")
             }
+
+            // } else if (imgAlt == "img02") {
+            //     cnt = 1;
+            //     img.setAttribute("alt", "img01");
+            //     img.setAttribute("src", "resources/image/img0"+cnt+".png");
+                
+            // } else if (imgAlt == "img03") {
+            //     cnt = 2;
+            //     img.setAttribute("alt", "img02");
+            //     img.setAttribute("src", "resources/image/img0"+cnt+".png");
+                
+            // }
         }
 
         anchs[1].onclick=function() {
             
             var imgAlt = img.getAttribute("alt");
-            if (imgAlt == "img01") {
-                cnt = 2;
-                img.setAttribute("alt", "img02");
-                img.setAttribute("src", "resources/image/img0"+cnt+".png");
-            } else if (imgAlt == "img02") {
-                cnt = 3;
-                img.setAttribute("alt", "img03");
-                img.setAttribute("src", "resources/image/img0"+cnt+".png");
-                
-            } else if (imgAlt == "img03") {
+            if (imgAlt == "img03") {
                 cnt = 1;
                 img.setAttribute("alt", "img01");
                 img.setAttribute("src", "resources/image/img0"+cnt+".png");
                 
+            } else {
+                ++cnt;
+                img.setAttribute("alt", "img0"+cnt);
+                img.setAttribute("src", "resources/image/img0"+cnt+".png")
             }
         
     }

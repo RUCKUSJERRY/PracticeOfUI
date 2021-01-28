@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function tableVal(){
+
+		var doc = document.forms[0];
+		// forms의 문서를 doc 변수에 넣는다.
+		var vals = [doc.id.value, doc.pw.value, doc.addr.value, doc.phone.value];
+		// forms태그 안에 td의 name들의 값을 vals 변수에 담는다. 
+		
+		// 유효값 처리
+		for (var i = 0 ; i < vals.length; i++) {
+			if (vals[i] == null || vals[i] == "" || vals[i] == undefined) {
+				// vals[i] 의 값이 없거나, 공백만 있거나, 정의되지 않은 값이면 알러트 한다.
+				alert("모든 항목을 입력해 주세요");
+				// break;
+				return;
+			} 
+
+		}
+
+		document.getElementById("addtr").appendChild(createRow(vals));
+		// id가 addtr인 태그의 자식태그에 로우테이블을 만들어서 vals변수를 파라미터로 전달해서 담아라.
+		
+	}
+	
+	function createRow(vals){
+		var tr = document.createElement("tr");
+		// tr이라는 태그를 만들어서 tr이라는 변수에 담는다.
+		for (var i = 0; i < vals.length; i++) {
+			// vals에 담긴 노드리스트의 길이만큼 for문 반복해줄거다.
+			var td = document.createElement("td");
+			// for문이 반복될때마다 td 태그를 만들어서 td라는 변수에 담는다.
+			td.textContent = vals[i];
+			// 만들어진 td변수에 vals[i] 값을 담는다
+			tr.appendChild(td);
+			// tr의 자식태그에 <td>vals[i]<td>를 넣어준다.
+		}
+
+		var dTd = document.createElement("td");
+		// td라는 태그를 추가로 만들어서 dTd 변수에 담는다.
+		dTd.innerHTML = "<input type='button' value='삭제' onclick='delRow(this)'/>";
+		// dTd변수의 값인 <td><input type='button' value='삭제' onclick='delRow(this)'/></td>를 HTML에 넣어준다.
+		tr.appendChild(dTd);
+		// tr의 자식태그에 dTd를 추가해서 넣어준다.
+		
+		return tr;
+		//마지막으로 tr변수에 담긴 5개의 값들을 리턴해서 createRow함수를 호출한 곳에 전달해준다.
+	}
+	
+	function deleteVal(){
+		var tbody = document.getElementById("addtr");
+		// id가 addtr인 문서의 요소들을 tbody 변수에 담는다.
+		while(tbody.hasChildNodes()){
+			// tbody의 노드리스트에 커서를 통해 커서에 값이 있을때까지 
+			tbody.removeChild(tbody.lastChild);
+			// tbody의 자식태그중 마지막 자식태그를 삭제하는 함수
+		}
+	}
+	
+	function delRow(ele){
+		var delTr = ele.parentNode.parentNode;
+		// delTr변수에 삭제버튼의 부모의 부모태그의 노드를 담아준다. (input -> td -> tr: input의 부모의 부모태그)
+
+		var tbody = document.getElementById("addtr");
+		// id가 addtr인 문서의 요소들을 tbody 변수에 담는다.
+		tbody.removeChild(delTr);
+		// tbody 자식태그 즉, tr의 값을 삭제한다. 
+	}
+
+
+</script>
+
+</head>
+<body>
+
+	<form>
+		<table id="intable">
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="text" name="pw"></td>
+			</tr>
+			<tr>
+				<td>주소</td>
+				<td><input type="text" name="addr"></td>
+			</tr>
+			<tr>
+				<td>전화번호</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+		</table>
+		<input type="button" value="추가" onclick="tableVal();"/>
+		<input type="button" value="전체삭제" onclick="deleteVal();"/>
+	</form>
+	<div id="addtable">
+		<table border="1" id="ctb">
+			<col width="100px" />
+			<col width="100px" />
+			<col width="300px" />
+			<col width="200px" />
+			<col width="100px" />
+			<thead>
+				<tr>
+					<th>아이디</th>
+					<th>비밀번호</th>
+					<th>주소</th>
+					<th>전화번호</th>
+					<th>삭제</th>
+				</tr>
+			</thead>
+			<tbody id="addtr"></tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
