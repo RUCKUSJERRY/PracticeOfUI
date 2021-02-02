@@ -23,6 +23,10 @@
 
     function idSelector() {
         $("* #selid").hide();
+        // $("* #selid").css("opacity", "0");
+        // $("* #selid").toggle();
+        // $("* #selid").css("display","none")
+        
     }
 
     function classSelector() {
@@ -31,6 +35,8 @@
 
     function propertySelector() {
         $("img[title*=02]").slideUp("2000");
+
+        // slideUp -> 400ms 디폴트값
     }
 
     function changeImg() {

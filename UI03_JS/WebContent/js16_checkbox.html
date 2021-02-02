@@ -39,7 +39,7 @@
         // bool = this.checked : name이 all인 체크박스의 체크속성(True, false)
         function allselect(bool) {
             var chks = document.getElementsByName("chk");
-
+            console.log(chks);
             for (var i = 0; i < chks.length; i++) {
                 chks[i].checked = bool;
             }
