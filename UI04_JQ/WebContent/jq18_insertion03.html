@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style type="text/css">
+
+    div{border: 1px solid red;}
+
+</style>
+
+    <script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript">
+        // after, before, insertafbf = slblings 형제 태그로 인식해서 삽입된다. 해당 태그 안에 삽입되는게 아니다.
+        $(function() {
+            $("button:eq(0)").click(function() {
+                $("#base").after("<div>새로운 엘리먼트(after)</div>")
+                // 파라미터로 특정된 내용을 엘리먼트 뒤에 삽입
+
+            });
+
+            $("button:eq(1)").click(function() {
+                $("<div>새로운 엘리먼트(insertafter)</div>").insertAfter("#base");
+                // 매치된 엘리먼트의 뒤에 삽입
+            });
+
+            $("button:eq(2)").click(function() {
+                $("#base").before("<div>새로운 엘리먼트(before)</div>")
+            });
+
+            $("button:eq(3)").click(function() {
+                $("<div>새로운 엘리먼트(insertbefore)</div>").insertBefore("#base");
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <button>after()</button>
+    <button>insertAfter()</button>
+    <button>before</button>
+    <button>insertBefore()</button>
+    
+    <div id="base">
+
+        <p>외부 삽입 메서드</p>
+
+    </div>
+
+</body>
+</html>
