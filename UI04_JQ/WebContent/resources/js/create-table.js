@@ -1,6 +1,7 @@
 
 function makeTable(elem) {
     // elem은 지금 empRowList의 파라미터 값을 받았다.
+    //$변수 는 var가 생략된건데, 이건 전역변수로 들어가진다.
     $table = $("<table border=1>");
     // 데이터 항목 넣어주는거
     // 테이블 보더를 1로해서 테이블을 생성
